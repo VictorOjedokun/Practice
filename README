@@ -1,0 +1,33 @@
+# CI/CD Pipeline with GitHub Actions
+Automated pipeline to **build, test, and deploy applications** using GitHub Actions.
+
+## 📌 Overview
+This project demonstrates a **Continuous Integration and Continuous Deployment (CI/CD) pipeline** implemented using **GitHub Actions**.  
+The pipeline is designed to:
+- Automatically **build and test** the application on every push or pull request.
+- Deploy the application to the desired environment after successful tests.
+
+It ensures **fast feedback, reduced errors, and efficient delivery**.
+
+## ✅ Features
+- Automated Build: Compiles and validates the application on every code change.
+- Automated Testing: Runs unit/integration tests before deployment.
+- Deployment: Deploys to production or staging environments automatically.
+- Branch Protection: CI runs on `development` and `main` branches.
+
+## 🏗️ Architecture
+1. Developer pushes code → GitHub triggers workflow.
+2. Pipeline executes:
+    - Checkout code
+    - Install dependencies
+    - Run tests
+    - Build artifact
+    - Deploy (if tests pass)
+3. Deployment happens on **merge to main** branch.
+
+
+## 🔧 Technologies Used
+- GitHub Actions – CI/CD orchestration
+- YAML – Workflow configuration
+- Language/Framework – Application code (Node.js)
+- Hosting Platform – AWS              
